@@ -8,9 +8,14 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>калькулятор ср балла</h1>
-        <input type="text" id="number">
-        <button onclick="calc()">Нажать</button>
-    <div class="result"></div>
+    <h1>Калькулятор ср балла</h1>
+        <input type="text" id="number" value="3">
+        <button onclick="createInputs()">Создать поля ввода</button>
+    <h2>Поля ввода:</h2>
+
+    <div id="inputs"></div><br>
+    <button onclick="calc()">Посчитать</button>
+    <h2>Балл: <span id="result"></span></h2>
+    <h2>Оценка: <span id="res"></span></h2>
 </body>
 </html>

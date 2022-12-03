@@ -1,10 +1,27 @@
-function calc() {
+function createInputs() {
     k = parseInt(document.getElementById("number").value);
+    var inputs = document.getElementById("inputs");
     for (i=0; i<k; i++) {
-        kkk = document.createElement("h2");
-        kkk.innerHTML = "zzz";
-        console.log(k, i);
+        var inpt = document.createElement("input");
+        inpt.value = i+1;
+        inputs.appendChild(inpt);
     }
-    inputs = document.getElementById("inputs");
-    inputs.appendChild(kkk);
+}
+
+function calc() {
+    var divInputs = document.getElementById("inputs");
+    inputs = divInputs.getElementsByTagName('input');
+    var sum = 0;
+    console.log("Собранные поля input и их количество:", inputs, inputs.length);
+    for (let item of inputs) {
+        sum += parseInt(item.value);
+    }
+    var avg = sum/inputs.length;
+    console.log("Средний балл", Math.round(avg * 100)/100);
+    var rate = Math.round(avg);
+    if (avg >= 2.65 && avg < 3.65) {
+        var rate = 3;
+    }
+    document.getElementById('result').innerHTML = Math.round(avg * 100)/100;
+    document.getElementById('res').innerHTML = rate;
 }
