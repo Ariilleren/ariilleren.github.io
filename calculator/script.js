@@ -19,8 +19,17 @@ function calc() {
     var avg = sum/inputs.length;
     console.log("Средний балл", Math.round(avg * 100)/100);
     var rate = Math.round(avg);
-    if (avg >= 2.65 && avg < 3.65) {
+    if (avg >= 0.00 && avg < 2.65) {
+        var rate = 2;
+    }
+    else if (avg >= 2.65 && avg < 3.65) {
         var rate = 3;
+    }
+    else if (avg >= 3.65 && avg < 4.65) {
+        var rate = 4;
+    }
+    else if (avg >= 4.65) {
+        var rate = 5;
     }
     document.getElementById('result').innerHTML = Math.round(avg * 100)/100;
     document.getElementById('res').innerHTML = rate;
