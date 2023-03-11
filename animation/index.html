@@ -8,8 +8,8 @@
     <script src="./snap.svg-min.js"></script>
     <style>
         .svg {
-    width: 800px;
-    height: 800px;
+    width: 1500px;
+    height: 1500px;
 }
     </style>
 </head>
@@ -17,14 +17,14 @@
     <svg class="svg"></svg>
     <script>
 let s = Snap(".svg"); /*поле*/
-var bigCircle = s.circle(150, 150, 100); /*большой круг*/
+var bigCircle = s.circle(150, 150, 50); /*большой круг (1 ось x, 2 ось -y, 3)*/
 bigCircle.attr({ /*парамерты*/
     fill: "#bada55",
-    stroke: "#000", /*цвет*/
+    stroke: "#fff", /*цвет*/
     strokeWidth: 5
 });
-var smallCircle = s.circle(100, 150, 70); /*маленькой круг*/
-var discs = s.group(smallCircle, s.circle(200, 150, 70)); /*группа диски*/
+var smallCircle = s.circle(150, 100, 70); /*маленькой круг 100, 150, 70*/
+var discs = s.group(smallCircle, s.circle(150, 200, 70)); /*группа диски*/
 discs.attr({
     fill: "#fff"
 });
