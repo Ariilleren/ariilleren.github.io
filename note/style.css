@@ -11,7 +11,8 @@ header {
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size:large;
+    font-size:x-large;
+
 }
 header a{
     color: white;
@@ -44,8 +45,8 @@ header ul li {
     flex-direction: column; /* элементы в столбик*/
     justify-content: center; 
     color: #000;
-    font-size: 35px;
-    font-weight: bolder; 
+    font-size: 35px; /*цитата*/
+    font-weight: bold;
 }
 .two {
     display: flex;
@@ -64,32 +65,49 @@ footer {
     background-color: #ACACAC;
 }
 .deathnote{
-    background-color: #848484;
+    background-color: #959595;
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 .deathnote .qqq {
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
+    padding-top: 2%; /*отступ б от заголовка*/
 }
 .deathnote .www{
     display: flex;
-    padding-bottom: 4%;
+    padding-top: 4%; /*отступ от пред блока*/
 }
 .qqq p, .www p {
-    margin-top: 0;
+    margin-top: 0; /*выравнивание б по верху*/
+}
+.qqq p {
+    padding-right: 5%; /*отступ т от картинки*/
+}
+.www p{
+    padding-left: 5%; /*отступ т от картинки*/
 }
 .plot{
     background-color: #ACACAC;
     display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     flex-direction: column;
+}
+.eee{
+    padding-right: 5%;
 }
 .ttt {
     display: flex;
+    align-items: center; 
+    padding-top: 2% /*отступ от заголовка*/
+    
 }
 .maincharacters{
     background-color: #848484;
@@ -97,9 +115,12 @@ footer {
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 .zzz{
     display: flex;
+    padding-top: 3% ;
     padding-bottom: 3%;
 }
 .xxx{
@@ -118,8 +139,9 @@ footer {
     background-color: #ACACAC;
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 4%;
 }
 .sss{
     padding-bottom: 5%;
