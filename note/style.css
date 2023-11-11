@@ -8,11 +8,11 @@ header {
     padding-right: 100px;
     height: 100px;
 }
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size:x-large;
-
 }
 header a{
     color: white;
@@ -34,8 +34,8 @@ header ul li {
 .quotes .img {
     display: flex;
     justify-content: center;
-    padding-bottom: 5%;
 }
+
 .l {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -63,15 +63,20 @@ footer {
 }
 .quotes{
     background-color: #ACACAC;
+    padding-bottom: 5%;
 }
 .deathnote{
-    background-color: #959595;
+    background-color: #848484;
     display: flex;
     flex-direction: column;
     padding-left: 12%;
     padding-right: 12%;
     padding-top: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
+}
+.deathnote h2{
+    display: flex;
+    position: center;
 }
 .deathnote .qqq {
     display: flex;
@@ -97,7 +102,7 @@ footer {
     padding-left: 12%;
     padding-right: 12%;
     padding-top: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
     flex-direction: column;
 }
 .eee{
@@ -113,28 +118,46 @@ footer {
     background-color: #848484;
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
     padding-top: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 5%;
 }
+
 .zzz{
     display: flex;
     padding-top: 3% ;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 .xxx{
     display: flex;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 .vvv{
     display:flex;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 .bbb{
     display:flex;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
+
+.zzz img, .vvv img{
+    margin-right: 3%;
+}
+.xxx img, .bbb img{
+    margin-left: 3%;
+}
+.zzz p, .vvv p{
+    margin-top: 0;
+    padding-right: 220px;
+}
+.xxx p, .bbb p{
+    margin-top: 0;
+    padding-left: 220px;
+    text-align: right;
+}
+
 .aboutnote{
     background-color: #ACACAC;
     display: flex;
@@ -143,7 +166,14 @@ footer {
     padding-right: 12%;
     padding-top: 4%;
 }
+.aboutnote img{
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
 .sss{
     padding-bottom: 5%;
 }
+.aaa{
+    display:flex
 
+}
