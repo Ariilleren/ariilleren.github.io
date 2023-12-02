@@ -40,7 +40,7 @@ header ul li {
     padding-top: 100px;
     padding-bottom: 50px;
     display: flex;
-    width: 1200px;
+    width: 60%;
     height: 300px;
     flex-direction: column; /* элементы в столбик*/
     justify-content: center; 
@@ -74,14 +74,22 @@ footer {
     padding-top: 4%;
     padding-bottom: 5%;
 }
-.deathnote h2{
+.deathnote h2, .maincharacters h2, .aboutnote h2, .plot h2{
     display: flex;
-    position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr{
+    width: 26%;
+	height: 10px;
+	border: none;
+	border-top: 2px solid #000000;
+	box-shadow: 0 10px 10px -10px #504f4f inset;
 }
 .deathnote .qqq {
     display: flex;
     /*justify-content: space-evenly;*/
-    padding-top: 2%; /*отступ б от заголовка*/
+    padding-top: 4%; /*отступ б от заголовка*/
 }
 .deathnote .www{
     display: flex;
@@ -111,7 +119,7 @@ footer {
 .ttt {
     display: flex;
     align-items: center; 
-    padding-top: 2% /*отступ от заголовка*/
+    padding-top: 4% /*отступ от заголовка*/
     
 }
 .maincharacters{
@@ -128,6 +136,7 @@ footer {
     display: flex;
     padding-top: 3% ;
     padding-bottom: 5%;
+    padding-top: 4% 
 }
 .xxx{
     display: flex;
@@ -174,6 +183,48 @@ footer {
     padding-bottom: 5%;
 }
 .aaa{
-    display:flex
-
+    display:flex;
+    padding-top: 4% 
+}
+@media (max-width: 380px) {
+    body{
+        font-size:large;
+    }
+    header {
+        display:flex;
+        flex-direction: column;
+    }
+    .qqq{
+        flex-direction: column; 
+    }
+    img {
+        width: 300px;
+        height: 163px;
+        flex-shrink: 0;
+        border: 2px solid black;
+    }
+    .zzz{
+        flex-direction: column; 
+    }
+    .xxx{
+        flex-direction: column; 
+    }
+    .vvv{
+        flex-direction: column; 
+    }
+    .bbb{
+        flex-direction: column; 
+    }
+    .www{
+        flex-direction: column; 
+    }
+    .aaa{
+        flex-direction: column; 
+    }
+    .ttt{
+        flex-direction: column;
+    }
+    .quotes .img {
+        flex-direction: column;
+    }
 }
