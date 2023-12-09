@@ -6,9 +6,8 @@ header {
     color: white;
     padding-left: 100px;
     padding-right: 100px;
-    height: 100px;
+    /*height: 100px;*/
 }
-
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -186,13 +185,31 @@ hr{
     display:flex;
     padding-top: 4% 
 }
-@media (max-width: 380px) {
+@media (max-width: 450px) {
     body{
         font-size:large;
     }
     header {
-        display:flex;
         flex-direction: column;
+    }
+    .l {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        display: flex;
+        width: 80%;
+        height: 300px;
+        flex-direction: column; /* элементы в столбик*/
+        justify-content: center; 
+        color: #000;
+        font-size: 25px; /*цитата*/
+    }
+    .menu ul {
+        max-width: 380;
+        font-size: 15px;
+        padding-left: 6px;
+    }
+    .menu ul li {
+        margin-left: 8px;
     }
     .qqq{
         flex-direction: column; 
@@ -203,17 +220,45 @@ hr{
         flex-shrink: 0;
         border: 2px solid black;
     }
-    .zzz{
+    .zzz p, .vvv p{
+        margin-top: 0;
+        padding-right: 0;
+    }
+    .xxx p, .bbb p{
+        margin-top: 0;
+        padding-left: 0;
+        text-align: left;
+    }
+    .zzz img, .vvv img{
+        margin-right: 0;
+    }
+    .xxx img, .bbb img{
+        margin-left: 0;
+    }
+    .zzz {
         flex-direction: column; 
     }
-    .xxx{
-        flex-direction: column; 
+    .xxx {
+        flex-direction: column;
+        /*order: 5;*/
+    }
+    .xxx img {
+        order: -1;
+    }
+    .xxx p {
+        order: 5;
     }
     .vvv{
         flex-direction: column; 
     }
     .bbb{
         flex-direction: column; 
+    }
+    .bbb img {
+        order: -1;
+    }
+    .bbb p {
+        order: 5;
     }
     .www{
         flex-direction: column; 
@@ -224,7 +269,32 @@ hr{
     .ttt{
         flex-direction: column;
     }
-    .quotes .img {
+    .quotes img {
         flex-direction: column;
     }
+    .quotes {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .aboutnote{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .deathnote{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .maincharacters{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .plot{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /*p{
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }*/
 }
