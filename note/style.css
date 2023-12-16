@@ -190,50 +190,64 @@ hr{
         font-size:large;
     }
     header {
-        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 0;
+    }
+    header ul {
+        padding: 0; 
+    }
+    header ul li{
+        text-align: center;
+        margin-left: 7%;
+        margin-right: 0;
+    
+    }
+    header a{
+        font-size: 17px ;
+        align-items: center;
     }
     .l {
-        padding-top: 100px;
-        padding-bottom: 50px;
-        display: flex;
-        width: 80%;
-        height: 300px;
-        flex-direction: column; /* элементы в столбик*/
-        justify-content: center; 
-        color: #000;
+        width: 85%;
         font-size: 25px; /*цитата*/
-    }
-    .menu ul {
-        max-width: 380;
-        font-size: 15px;
-        padding-left: 6px;
-    }
-    .menu ul li {
-        margin-left: 8px;
     }
     .qqq{
         flex-direction: column; 
     }
+    .qqq p, .www p{
+        padding: 0;
+    }
+    .img{
+        flex-direction: column;
+    } /*первый блок*/
+    p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
     img {
         width: 300px;
         height: 163px;
-        flex-shrink: 0;
-        border: 2px solid black;
+        /*flex-shrink: 0*/;
+        margin-left: auto;
+        margin-right: auto;
     }
     .zzz p, .vvv p{
         margin-top: 0;
         padding-right: 0;
     }
+    .zzz img, .vvv img{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .xxx img, .bbb img{
+        margin-left: auto;
+        margin-right: auto;
+    }
     .xxx p, .bbb p{
         margin-top: 0;
         padding-left: 0;
         text-align: left;
-    }
-    .zzz img, .vvv img{
-        margin-right: 0;
-    }
-    .xxx img, .bbb img{
-        margin-left: 0;
     }
     .zzz {
         flex-direction: column; 
@@ -241,6 +255,9 @@ hr{
     .xxx {
         flex-direction: column;
         /*order: 5;*/
+    }
+    .eee {
+        padding-right : 0;  
     }
     .xxx img {
         order: -1;
@@ -263,14 +280,22 @@ hr{
     .www{
         flex-direction: column; 
     }
+    .www img {
+        order: 5;
+    }
+    .www p {
+        order: -1;
+    }
     .aaa{
         flex-direction: column; 
     }
     .ttt{
         flex-direction: column;
     }
-    .quotes img {
-        flex-direction: column;
+    .sss{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .quotes {
         padding-left: 0;
@@ -279,6 +304,10 @@ hr{
     .aboutnote{
         padding-left: 0;
         padding-right: 0;
+    }
+    .aboutnote img {
+        margin-left: auto;
+        margin-right: auto;
     }
     .deathnote{
         padding-left: 0;
