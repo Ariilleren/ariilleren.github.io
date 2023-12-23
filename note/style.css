@@ -185,7 +185,7 @@ hr{
     display:flex;
     padding-top: 4% 
 }
-@media (max-width: 450px) {
+@media (max-width: 750px) {
     body{
         font-size:large;
     }
@@ -195,17 +195,21 @@ hr{
         margin: 0;
     }
     header ul {
-        padding: 0; 
+        padding: 0;
+        justify-content: space-evenly;
+        align-items: center; 
     }
-    header ul li{
+    header ul li a{
+        display: block;
         text-align: center;
-        margin-left: 7%;
+    }
+    header ul li {
         margin-right: 0;
-    
+        width: 27%;
     }
     header a{
+        display: flex;
         font-size: 17px ;
-        align-items: center;
     }
     .l {
         width: 85%;
