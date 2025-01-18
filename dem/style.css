@@ -1,5 +1,15 @@
 header {
     display: flex;
+    justify-content: flex-start;
+    
+}
+header ul {
+    display: flex;
+    list-style: none;
     justify-content: space-between;
-    align-items: center;
+}
+body {
+    font-family: inter;
+    background-color: black;
+    
 }
