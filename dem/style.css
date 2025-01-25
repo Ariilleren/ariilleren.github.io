@@ -1,6 +1,7 @@
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
     
 }
 header ul {
@@ -8,8 +9,35 @@ header ul {
     list-style: none;
     justify-content: space-between;
 }
+header ul li{
+    margin-right: 20px;
+}
 body {
     font-family: inter;
     background-color: black;
-    
+    color: azure;
+    display: flex;
+    flex-direction: column;
+}
+.ne{
+    background-color: aliceblue;
+    width: 92%;
+    height: 92%;
+    color:black;
+    display: flex;
+    align-items: center;  
+    justify-content: space-around;
+}
+.ne img{
+    width: 40%; 
+}
+
+.ne1 button{
+    background-color: red;
+    color: white;
+}
+header img{
+    width: 64px;
+    margin-left: 2%;
+    margin-top: 2%;
 }
