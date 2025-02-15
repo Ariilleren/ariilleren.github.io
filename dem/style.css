@@ -1,10 +1,13 @@
 header {
+    margin-top: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    font-size: 24px;  
 }
 header ul {
+   
+    margin-top: 2%;
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -18,8 +21,10 @@ body {
     color: azure;
     display: flex;
     flex-direction: column;
+    /*font-size: large;*/
 }
 .ne{
+    margin-top: 2px;
     background-color: aliceblue;
     width: 92%;
     height: 92%;
@@ -27,17 +32,40 @@ body {
     display: flex;
     align-items: center;  
     justify-content: space-around;
+    border-radius: 10px;
 }
 .ne img{
+    width:512px;
     width: 40%; 
 }
 
 .ne1 button{
     background-color: red;
     color: white;
+    font-size: 32px;
+    border-radius:10px;
 }
 header img{
     width: 64px;
     margin-left: 2%;
     margin-top: 2%;
+}
+.dl{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 10px;
+    justify-content: space-around;
+    font-size: 32px;
+}
+.chto{
+    display: flex;
+    flex-direction: column;
+}
+.chto1, .chto2{
+    justify-content: space-around;
+}
+.chto img{
+    width: 9%;
 }
