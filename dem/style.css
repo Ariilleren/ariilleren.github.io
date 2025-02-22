@@ -1,13 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 header {
-    margin-top: 2px;
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 24px;  
 }
 header ul {
-   
-    margin-top: 2%;
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -16,7 +15,9 @@ header ul li{
     margin-right: 20px;
 }
 body {
-    font-family: inter;
+    
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
     background-color: black;
     color: azure;
     display: flex;
@@ -24,7 +25,9 @@ body {
     /*font-size: large;*/
 }
 .ne{
-    margin-top: 2px;
+    /*position: absolute;*/
+    margin: auto;
+    margin-top: 3%;
     background-color: aliceblue;
     width: 92%;
     height: 92%;
@@ -35,8 +38,7 @@ body {
     border-radius: 10px;
 }
 .ne img{
-    width:512px;
-    width: 40%; 
+   max-width:512px;
 }
 
 .ne1 button{
@@ -48,16 +50,17 @@ body {
 header img{
     width: 64px;
     margin-left: 2%;
-    margin-top: 2%;
 }
 .dl{
-    margin: 30px;
+    margin: auto;
+    margin-top: 3%;
     padding: 10px;
     display: flex;
     border: 1px solid white;
     border-radius: 10px;
     justify-content: space-around;
     font-size: 32px;
+    width: 92%;
 }
 .chto{
     display: flex;
