@@ -30,7 +30,6 @@ body {
     margin-top: 3%;
     background-color: aliceblue;
     width: 92%;
-    height: 92%;
     color:black;
     display: flex;
     align-items: center;  
@@ -54,7 +53,7 @@ header img{
 .dl{
     margin: auto;
     margin-top: 3%;
-    padding: 10px;
+    padding: 0;
     display: flex;
     border: 1px solid white;
     border-radius: 10px;
@@ -67,8 +66,16 @@ header img{
     flex-direction: column;
 }
 .chto1, .chto2{
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .chto img{
     width: 9%;
+}
+.gen{
+    width: fit-content;
+}
+.rab1{
+    width: fit-content;
 }
