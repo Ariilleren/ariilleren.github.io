@@ -37,13 +37,14 @@ body {
     justify-content: end; 
 }
 .qqq0 {
-    height: 422px;
+    height: 410px;
 }
 .qqq1{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
+    margin-bottom: 2%;
 }
 .qqq4{
     height: 90px; 
@@ -58,7 +59,7 @@ body {
     /* position: absolute; */
     margin: auto;
     margin-top: 3%; 
-    background-color: aliceblue;
+    background-color: #d9d9d9;
     width: 92%;
     color:black;
     display: flex;
@@ -72,15 +73,19 @@ body {
 .ne1{
     width: 512px;
     display: flex;
-    width: 512px;
     flex-direction: column;
-    /* justify-content: space-around; */
+    justify-content: space-between;  
 }
 .ne1 button{
     background-color: red;
     color: white;
-    font-size: 32px;
-    border-radius:10px;
+    border-radius:20px;
+    height: 74px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45.99px;
+    letter-spacing: 0%;
+
 }
 header img{
     width: 64px;
@@ -99,6 +104,9 @@ header img{
     width: 92%;
     max-height: 140px;
 }
+.z{
+    display: flex;
+}
 .chto{
     /* margin-top: 3%; */
     margin: auto    ;
@@ -112,8 +120,11 @@ header img{
     flex-direction: row;
     justify-content: space-between;
 }
-.chto img{
+.chto1, .chto2 img{
     width: 35%;
+}
+.chtologo{
+    width: 220px;
 }
 .gen, .rab1, .rab2, .nap {
     /* width: fit-content; */
@@ -146,6 +157,7 @@ h1 {
     font-size: 64px;
     max-width: 918px;
     text-align: center;
+    margin-bottom: 75px;
   
 }
 .grt {
@@ -167,7 +179,11 @@ h1 {
 }
 .jwl {
     max-width:518px;
-    margin-right: 14%;
+    margin-right: 7%;
+    transition: transform 1s;
+}
+.jwl:hover {
+    transform: scale(1.1);
 }
 .rpg {
     font-size:48px;
@@ -179,11 +195,14 @@ h1 {
 .kdg {
     display: flex;
     flex-direction:column;
+    margin-top: 1%;
+    flex-basis: 40%;
 }
 .ytg {
     color: black;
     font-size: 36px;
     max-width: 418px;
+    margin-bottom: 35%;
 }
 .ytl {
     color: black;
@@ -191,6 +210,7 @@ h1 {
     font-style: italic;
     max-width: 386px;
 }
+
 .uik {
     background-color: #D03844;
     color: white;
@@ -198,6 +218,8 @@ h1 {
     max-width: 379px;
     border-radius: 30px;
     height: 90px;
+    font-weight: 700;
+    margin-bottom: 10%;
 }
 .thk {
     color: #CECECE;
@@ -212,13 +234,25 @@ h1 {
 .sis {
     background-color: white;
     font-size: 24px;
-    max-width: 427px;
+    width: 427px;
     border-radius: 10px;
-    height: 50px;
+    height: 44px;
+    margin: auto;
+    margin-top: 45px;
+}
+.odr {
+    background-color: white;
+    font-size: 24px;
+    width: 427px;
+    border-radius: 10px;
+    height: 44px;
     margin: auto;
 }
 h2 {
     font-size: 64px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 4%;
 }
 .fgt {
     display: flex;
@@ -229,19 +263,29 @@ h2 {
     height: 547px;
     border-radius: 40px;
     margin: auto;
+    align-items: center;
 }
-.dpt {
-    color: #000000;
-    background-color: white;
+#dpt {
     font-size: 24px;
-    max-width: 427px;
-    border-radius: 10px;
-    height: 50px;
-    margin: auto;
-    
 }
-.ftu {
-    color: #CECECE;
+input{
+	width: 427px;
+    height: 44px;
+    border-radius: 10px;
+}
+.tyu{
+	position:relative;
+    color: #000000;
+    font-size: 24px;
+    width: 427px;
+    height: 44px;
+    margin: auto;
+    margin-bottom: 52px;
+}
+.pri{
+	position:absolute;
+    left: 3px;
+    top:14px;
 }
 .chk {
     color: #000000;
@@ -249,28 +293,76 @@ h2 {
 footer {
     display: flex;
     flex-direction:row;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-bottom: 3%;
 }
 .gvn {
     font-style: italic;
     font-size: 24px;
+    margin-left: 1px;
 }
 .zhp {
     font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top: 6%;
 }
 .kal {
     font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+    margin-top: 6%;
 }
 .ppp {
     color: #808080;
+    margin-top: 4px;
 }
 .hit {
     max-width: 503px;
 }
 .urk {
     max-width: 538px;
+    margin-left: 2%;
 }
 .ikl {
     max-width: 543px;
-    margin-left: 10%;
+    margin-left: 1%;
+    transition: transform 1s;
+}
+.ikl:hover {
+    transform: scale(1.1);
 
+}
+#tgs {
+    margin-bottom: 6px;
+}
+.hit {
+    margin-top: 10px;
+}
+#iek {
+    margin-bottom: 12%;
+}
+.uei {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    background-color: #B4B4B4;
+    max-width: 505px;
+    margin-left: 2%;
+    height: 325px;
+    margin-bottom: 8%;
+    border-radius: 20px;
+}
+.rpd {
+    display: flex;
+    align-items: center;
+}
+.ids {
+    margin-top: 20px;
+}
+.dfn {
+    margin-bottom: 42px;
 }

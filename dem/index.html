@@ -14,7 +14,6 @@
 			<img src="NeuroMasteryLogo.svg" alt="">
         	<p style="font-size: 24px; margin-left: 20px;">Нейромастер</p>
 		</div>
-        
         <ul>
             <li style="font-size: 24px;">Нейросети: зачем</li> 
             <li style="font-size: 24px;">Нейропомощники</li> 
@@ -24,12 +23,11 @@
 
     <!-- промо блок -->
     <div class="ne0">
-
         <div class="ne" >
             <div class="ne1">
-                <h3 style="font-size: 86px;">Нейросети</h3>
+                <p style="font-size: 86px;">Нейросети</p>
                 <p style="font-size: 45px;">практический курс</p>
-                <p style="font-size: 32px;">Дизайнерам, творцам и криэйторам</p>
+                <p style="font-size: 32px; color: #646464;">Дизайнерам,<br> творцам и криэйторам</p>
                 <button>Записаться на поток</button>
             </div>
             <div class="qqq">
@@ -37,26 +35,29 @@
 					.
 				</div>
                 <div class="qqq1">
-                    <div class="qqq4" >
+                    <div class="qqq4">
                         <p style="color: black; font-size: 32px;">-25%</p>
                     </div>
-                    <p style="color: #fff; font-size: 24px;">Скидки до 31 декабря </p>
-                    <p style="color: #fff; font-size: 24px;">Первый поток: 12 января</p>
+                    <p style="color: #fff; font-size: 24px;">Скидки<br> до 31 декабря </p>
+                    <p style="color: #fff; font-size: 24px;">Первый поток:<br> 12 января</p>
                 </div>
             </div>
         </div>
 
         <div class="dl">
-            <p>Длительность: 1 месяц</p>
-            <p>Формат: онлайн</p>
-            <p>Диплом гос. образца</p>
+            <p>Длительность:<br> 1 месяц</p>
+            <p>Формат: <br> онлайн</p>
+            <p>Диплом <br> гос. образца</p>
         </div>
 
     </div>
 
     <!-- что могут нейросети -->
    	<div class="chto">
-        <p style="font-size:64px; margin-bottom: 3%;">Что могут нейросети</p>
+		<div class="z">
+			<p style="font-size:64px; margin-bottom: 3%;">Что могут нейросети</p>
+			<img src="NeuroMasteryLogo2.svg" alt="" class="chtologo">
+		</div>
         <div class="chto1">
             <div class="gen">
 				<div class="gen1">
@@ -84,7 +85,7 @@
             <div class="nap">
 				<div class="nap1" style="margin-top: 3%;">
 					<p style="font-size: 31px;">Кодинг</p>
-                	<p style="font-size: 17px;">Написание кода по запросу,оптимизация,создание документации</p>
+                	<p style="font-size: 17px;">Написание кода по запросу, оптимизация,создание документации</p>
 				</div>	
                 <img src="coding.png" alt="">
             </div>
@@ -119,34 +120,62 @@
   	</div>
 
     <!-- записаться на поток -->
-  	<div class="block" id="zap">
-      	<h2>Записаться на поток</h2>
-      	<div class="fgt">
-        	<div class="kdg">
-          		<p class="ytg">Оставьте ваши данные, и мы свяжемся с вами</p>
-          		<button class="uik">Записаться</button>
-          		<p class="ytl">нажимая кнопку, я соглашаюсь с <a class="chk" href="">положением о персональных данных</a></p> 
-        	</div>
-        	<input type="text" class="sis" name="sis"  placeholder="Имя"><br>
-        	<input type="text" class="sis" name="sis"  placeholder="e-mail"><br>
-       	 	<input type="text" class="dpt" name="dpt"  placeholder="+7 (999) 777-77-77"><br>
-      	</div>
-  	</div>
-
-    <!-- подвал -->
-  	<footer>
-      	<img src="NeuroMasteryLogo.svg" alt="">
-      	<p class="gvn">ООО Нейросети</p>
-      	<ul class="zhp">
-        	<li>Открытые курсы:</li>
-        	<li class="ppp">+7 (495) 15-15-456</li>
-        	<li> Корпоративное обучение:</li>
-       		<li class="ppp"> +7 (495) 15-15-123</p></li>
-      	</ul>
-		<ul class="kal">
-			<li>О нас</li>
-			<li>Лицензия</li>
-		</ul>
-  	</footer>
+	<div class="block" id="zap">
+		<h2>Записаться на поток</h2>
+		<div class="fgt">
+		  <div class="kdg">
+				<p class="ytg">Оставьте ваши данные,<br> и мы свяжемся с вами</p>
+				<button class="uik">Записаться</button>
+				<p class="ytl">нажимая кнопку, я соглашаюсь<br> с <a class="chk" href="">положением о персональных данных</a></p> 
+		  </div>
+	  <div class="uei">
+			<input type="text" class="sis" name="sis" placeholder="Имя"><br>
+		  <input type="email" class="odr" name="odr"  placeholder="e-mail"><br>
+		  <div class="tyu">
+			  <input type="text" id="dpt" name="dpt" placeholder="     (999) 777-77-77" />
+			  <label for="dpt" class="pri">+7</label>
+		  </div> 
+	  </div> 
+	  <script>
+		  $(document).ready(function () {
+			  $('.uik').click(function () {
+				  $(".sis").focus();
+			  })
+			  $('.uik').click(function () {
+				  let nameField = document.getElementsByClassName("sis");
+				  let emailField = document.getElementsByClassName("odr");
+				  let emailPattern = /@/;
+				  let numberField = document.getElementsByClassName("dpt");
+				  let length = numberField.value.length;
+				  if ((!emailPattern.test(emailField.value)) && (!emailField.value === "") && (!namelField.value === "") && (!numberField.value === "")) {
+					  alert("Данные формы введены неверно: в поле e-mail неверно указан адрес почты")
+				  }
+				  if ((!length===10) && (!emailField.value === "") && (!namelField.value === "") && (!numberField.value === "")) {
+					  alert("Данные формы введены неверно: в поле Телефон неверно указан номер телефона")
+				  }
+				  if ((emailPattern.test(emailField.value)) && ((length===10) && (!emailField.value === "") && (!namelField.value === "") && (!numberField.value === ""))) {
+					  alert("Уважаемый", nameField,"! Спасибо за оставленные данные, мы свяжемся с вами по телефону", numberField," и отправим письмо на", emailField)
+				  }
+			  })
+		  });
+	  </script>
+	</div>
+	<!-- подвал -->
+	<footer>
+	  <div class="rpd">
+		  <img src="NeuroMasteryLogo.svg" alt="">
+			<p class="gvn">ООО Нейросети</p>
+	  </div>
+		<div class="zhp">
+		  <p>Открытые курсы:</p>
+		  <p class="ppp">+7 (495) 15-15-456</p>
+		  <p class="ids"> Корпоративное обучение:</p>
+			 <p class="ppp"> +7 (495) 15-15-123</p>
+	  </div>
+	  <div class="kal">
+		  <p class="dfn">О нас</lp>
+		  <p>Лицензия</p>
+	  </div>
+	</footer>
 </body>
 </html>
