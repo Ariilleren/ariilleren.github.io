@@ -122,43 +122,44 @@
     <!-- записаться на поток -->
 	<div style="background-color: #141414;" class="block" id="zap">
 		<h2>Записаться на поток</h2>
-		<div class="fgt">
-		  <div class="kdg">
-				<p class="ytg">Оставьте ваши данные,<br> и мы свяжемся с вами</p>
-				<button class="uik">Записаться</button>
-				<p class="ytl">нажимая кнопку, я соглашаюсь<br> с <a class="chk" href="">положением о персональных данных</a></p> 
-		  </div>
-	  <div class="uei">
-			<input type="text" class="sis" name="sis" placeholder="Имя"><br>
-		  <input type="email" class="odr" name="odr"  placeholder="e-mail"><br>
-		  <div class="tyu">
-			  <input type="text" id="dpt" name="dpt" placeholder="     (999) 777-77-77" />
-			  <label for="dpt" class="pri">+7</label>
-		  </div> 
-	  </div> 
-	  <script>
-		  $(document).ready(function () {
-			  $('.uik').click(function () {
-				  $(".sis").focus();
-			  })
-			  $('.uik').click(function () {
-				  let nameField = document.getElementsByClassName("sis");
-				  let emailField = document.getElementsByClassName("odr");
-				  let emailPattern = /@/;
-				  let numberField = document.getElementsByClassName("dpt");
-				  let length = numberField.value.length;
-				  if ((!emailPattern.test(emailField.value)) && (!emailField.value === "") && (!namelField.value === "") && (!numberField.value === "")) {
-					  alert("Данные формы введены неверно: в поле e-mail неверно указан адрес почты")
-				  }
-				  if ((!length===10) && (!emailField.value === "") && (!namelField.value === "") && (!numberField.value === "")) {
-					  alert("Данные формы введены неверно: в поле Телефон неверно указан номер телефона")
-				  }
-				  if ((emailPattern.test(emailField.value)) && ((length===10) && (!emailField.value === "") && (!namelField.value === "") && (!numberField.value === ""))) {
-					  alert("Уважаемый", nameField,"! Спасибо за оставленные данные, мы свяжемся с вами по телефону", numberField," и отправим письмо на", emailField)
-				  }
-			  })
-		  });
-	  </script>
+	  <div class="fgt">
+		<div class="kdg">
+			  <p class="ytg">Оставьте ваши данные,<br> и мы свяжемся с вами</p>
+			  <button class="uik" onclick="doAlert()">Записаться</button>
+			  <p class="ytl">нажимая кнопку, я соглашаюсь<br> с <a class="chk" href="">положением о персональных данных</a></p> 
+		</div>
+	<div class="uei">
+		  <input type="text" class="sis" name="sis" placeholder="Имя"><br>
+		<input type="email" class="odr" name="odr"  placeholder="e-mail"><br>
+		<div class="tyu">
+			<input type="text" class="dpt" name="dpt" placeholder="+7 (999) 777-77-77" value="+7" />
+		</div> 
+	</div> 
+	<script>
+		function doAlert() {
+		 	let nameField = document.getElementsByClassName("sis")[0];
+		  	let emailField = document.getElementsByClassName("odr")[0];
+		  	let emailPattern = '@';
+		  	let numberField = document.getElementsByClassName("dpt")[0];
+			let length1 = numberField.value.length;
+			console.log(nameField.value, emailField.value, numberField.value, length1);
+			console.log("Уважаемый", nameField.value,"! Спасибо за оставленные данные, мы свяжемся с вами по телефону", numberField.value," и отправим письмо на", emailField.value);
+			if ((emailField.value.includes(emailPattern)) && ((length1 === 10) && (!(emailField.value === "")) && (!(nameField.value === "")) && (!(numberField.value === "+7")))) {
+				alert("Уважаемый", nameField,"! Спасибо за оставленные данные, мы свяжемся с вами по телефону", numberField," и отправим письмо на", emailField)
+			}
+			else {
+				if (((emailField.value.includes(emailPattern))) && (!(emailField === "")) && (!(nameField.value === "")) && (!(numberField.value === "+7"))) {
+					alert("Данные формы введены неверно: в поле e-mail неверно указан адрес почты")
+			}
+				else if (((length1 === 10)) && (!(emailField.value.includes(emailPattern))) && (!(emailField.value === "")) && (!(nameField.value === "")) && (!(numberField.value === "+7"))) {
+					alert("Данные формы введены неверно: в поле e-mail неверно указан адрес почты, в поле Телефон неверно указан номер телефона")
+			}
+				else if (((length1 === 10)) && (!(emailField.value === "")) && (!(nameField.value === "")) && (!(numberField.value === "+7"))) {
+				alert("Данные формы введены неверно: в поле Телефон неверно указан номер телефона")
+			}
+			}
+		}
+	</script>
 	</div>
 	<!-- подвал -->
 	<footer>
