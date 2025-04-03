@@ -156,6 +156,9 @@ header img{
 footer img {
     width: 68px;
 }
+.text {
+    display: none;
+} 
 h1 {
     width: fit-content;
     margin: auto;
@@ -313,7 +316,7 @@ footer {
     margin-left: 8%;
     margin-top: 6%;
 }
-.kal {
+article {
     font-size: 26px;
     display: flex;
     flex-direction: column;

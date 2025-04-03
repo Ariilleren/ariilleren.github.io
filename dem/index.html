@@ -6,6 +6,7 @@
     <title>Нейромастер</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css"> 
+	<script src='script.js'></script>
 </head>
 <body>
     <!-- шапка -->
@@ -25,10 +26,12 @@
     <div class="ne0">
         <div class="ne" >
             <div class="ne1">
-                <p style="font-size: 86px;">Нейросети</p>
-                <p style="font-size: 45px;">практический курс</p>
-                <p style="font-size: 32px; color: #646464;">Дизайнерам,<br> творцам и криэйторам</p>
-                <button class="pr" onclick="doAlert()">Записаться на поток</button>
+				<div class="text">
+					<p style="font-size: 86px;" id="text">Нейросети</p>
+                	<p style="font-size: 45px;" id="text">практический курс</p>
+                	<p style="font-size: 32px; color: #646464;" id="text">Дизайнерам,<br> творцам и криэйторам</p>
+				</div>
+                <button class="pr" onclick="Show()" id="knopka">Записаться на поток</button>
             </div>
             <div class="qqq">
 				<div class="qqq0">
@@ -135,31 +138,7 @@
 			<input type="text" class="dpt" name="dpt" placeholder="+7 (999) 777-77-77" value="+7" />
 		</div> 
 	</div> 
-	<script>
-		function doAlert() {
-		 	let nameField = document.getElementsByClassName("sis")[0];
-		  	let emailField = document.getElementsByClassName("odr")[0];
-		  	let emailPattern = '@';
-		  	let numberField = document.getElementsByClassName("dpt")[0];
-			let length1 = numberField.value.length;
-			nameField.focus()
-			if ((emailField.value.includes(emailPattern)) && ((length1 === 12) && (!(emailField.value === "")) && (!(nameField.value === "")) && (!(numberField.value === "+7")))) {
-				alert("Уважаемый " + nameField.value + "! Спасибо за оставленные данные, мы свяжемся с вами по телефону " + numberField.value + " и отправим письмо на " + emailField.value)
-			}
-			else {
-				if ((!(length1 === 12)) && (!(emailField.value.includes(emailPattern))) && (!(emailField.value === "")) && (!(nameField.value === "")) && (!(numberField.value === "+7"))) {
-					alert("Данные формы введены неверно: в поле e-mail неверно указан адрес почты, в поле Телефон неверно указан номер телефона")
-			}
-				else if ((!(emailField.value.includes(emailPattern))) && (!(emailField === "")) && (!(nameField.value === "")) && (!(numberField.value === "+7"))) {
-					alert("Данные формы введены неверно: в поле e-mail неверно указан адрес почты")
-			}
-				else if ((!(length1 === 12)) && (!(emailField.value === "")) && (!(nameField.value === "")) && (!(numberField.value === "+7"))) {
-					alert("Данные формы введены неверно: в поле Телефон неверно указан номер телефона")
-			}
-			}
-			}
-	</script>
-	</div>
+		</div>
 	<!-- подвал -->
 	<footer>
 	  <div class="rpd">
@@ -171,11 +150,11 @@
 		  <p class="ppp">+7 (495) 15-15-456</p>
 		  <p class="ids"> Корпоративное обучение:</p>
 			 <p class="ppp"> +7 (495) 15-15-123</p>
-	  </div>
-	  <div class="kal">
-		  <p class="dfn">О нас</lp>
-		  <p>Лицензия</p>
-	  </div>
+	  	</div>
+		<article>
+			<p class="dfn">О нас</lp>
+			<p>Лицензия</p>
+		</article>
 	</footer>
 </body>
 </html>
